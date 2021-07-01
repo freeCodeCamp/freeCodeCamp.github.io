@@ -1,4 +1,4 @@
-# freeCodeCamp.github.io
+# Open Source at freeCodeCamp.org
 
 > A list of some of our open-source projects.
 
