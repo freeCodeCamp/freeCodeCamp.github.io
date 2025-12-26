@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore freeCodeCamp's open source projects. Join millions of developers building free education for the world.">
+    <meta name="theme-color" content="#0a0a23">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Open Source at freeCodeCamp">
+    <meta property="og:description" content="Explore our community-driven open source projects. Together, we're building free education for everyone.">
+    <meta property="og:type" content="website">
+
+    <title>Open Source at freeCodeCamp</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- YAML Parser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="https://www.freecodecamp.org" class="nav-logo" aria-label="freeCodeCamp">
+                <svg viewBox="0 0 210 24" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <path d="M8.13 10.93c.03-.08.05-.15.05-.22 0-.32-.12-.6-.36-.84-.24-.24-.53-.36-.88-.36-.35 0-.65.12-.9.37-.25.25-.38.55-.38.91 0 .08.02.17.06.28.04.11.06.18.06.21 0 .13-.05.23-.14.32-.09.09-.21.13-.35.13-.14 0-.26-.05-.36-.16-.1-.11-.15-.24-.15-.4 0-.22.04-.44.11-.66.07-.22.18-.42.32-.6.14-.18.31-.33.51-.44.2-.12.42-.2.66-.25.24-.05.49-.07.76-.07.65 0 1.19.17 1.62.5.43.33.65.76.65 1.29 0 .35-.08.65-.24.89-.16.24-.35.43-.57.56-.22.14-.53.32-.93.54-.4.22-.7.42-.89.58-.19.16-.35.39-.47.68h3.02c.13 0 .25-.05.34-.14.09-.09.14-.21.14-.34h.33c0 .27-.09.5-.27.68-.18.18-.4.27-.67.27H4.99v-.33c0-.29.05-.55.15-.78.1-.23.22-.43.38-.59.16-.16.33-.3.53-.41.2-.11.41-.22.62-.33.21-.11.42-.22.62-.32.2-.11.38-.23.52-.36.14-.13.26-.28.35-.45.09-.17.13-.36.13-.58zm9.11 2.69c-.47.47-1.04.71-1.71.71-.67 0-1.24-.24-1.71-.71-.47-.47-.71-1.04-.71-1.71 0-.67.24-1.24.71-1.71.47-.47 1.04-.71 1.71-.71.67 0 1.24.24 1.71.71.47.47.71 1.04.71 1.71 0 .67-.24 1.24-.71 1.71zm-.48-2.94c-.34-.34-.76-.51-1.24-.51-.48 0-.9.17-1.24.51-.34.34-.51.75-.51 1.24 0 .48.17.9.51 1.24.34.34.75.51 1.24.51.48 0 .9-.17 1.24-.51.34-.34.51-.76.51-1.24 0-.49-.17-.9-.51-1.24zm7.13 2.94c-.47.47-1.04.71-1.71.71-.67 0-1.24-.24-1.71-.71-.47-.47-.71-1.04-.71-1.71 0-.67.24-1.24.71-1.71.47-.47 1.04-.71 1.71-.71.67 0 1.24.24 1.71.71.47.47.71 1.04.71 1.71 0 .67-.24 1.24-.71 1.71zm-.48-2.94c-.34-.34-.76-.51-1.24-.51s-.9.17-1.24.51c-.34.34-.51.75-.51 1.24 0 .48.17.9.51 1.24.34.34.76.51 1.24.51s.9-.17 1.24-.51c.34-.34.51-.76.51-1.24 0-.49-.17-.9-.51-1.24zm5.83.22c.03-.08.05-.15.05-.22 0-.32-.12-.6-.36-.84-.24-.24-.53-.36-.88-.36-.35 0-.65.12-.9.37-.25.25-.38.55-.38.91 0 .08.02.17.06.28.04.11.06.18.06.21 0 .13-.05.23-.14.32-.09.09-.21.13-.35.13-.14 0-.26-.05-.36-.16-.1-.11-.15-.24-.15-.4 0-.22.04-.44.11-.66.07-.22.18-.42.32-.6.14-.18.31-.33.51-.44.2-.12.42-.2.66-.25.24-.05.49-.07.76-.07.65 0 1.19.17 1.62.5.43.33.65.76.65 1.29 0 .35-.08.65-.24.89-.16.24-.35.43-.57.56-.22.14-.53.32-.93.54-.4.22-.7.42-.89.58-.19.16-.35.39-.47.68h3.02c.13 0 .25-.05.34-.14.09-.09.14-.21.14-.34h.33c0 .27-.09.5-.27.68-.18.18-.4.27-.67.27h-4.04v-.33c0-.29.05-.55.15-.78.1-.23.22-.43.38-.59.16-.16.33-.3.53-.41.2-.11.41-.22.62-.33.21-.11.42-.22.62-.32.2-.11.38-.23.52-.36.14-.13.26-.28.35-.45.09-.17.13-.36.13-.58z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">freeCodeCamp</span>
+            </a>
+            <div class="nav-links">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#stats" class="nav-link">Impact</a>
+                <a href="https://github.com/freeCodeCamp" class="nav-link nav-cta" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-code-branch"></i>
+                Open Source
+            </div>
+            <h1 class="hero-title">
+                Building Free Education<br>
+                <span class="gradient-text">for the World</span>
+            </h1>
+            <p class="hero-description">
+                Explore our community-driven open source projects. Together with millions of developers,
+                we're making quality education accessible to everyone, everywhere.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Projects
+                </a>
+                <a href="https://contribute.freecodecamp.org" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <i class="fas fa-hands-helping"></i>
+                    Start Contributing
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">opensource.js</span>
+                </div>
+                <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-variable">freeCodeCamp</span> = {
+  <span class="code-property">mission</span>: <span class="code-string">"Free education"</span>,
+  <span class="code-property">learners</span>: <span class="code-number">40_000_000</span>,
+  <span class="code-property">curriculum</span>: <span class="code-string">"3000+ hours"</span>,
+  <span class="code-property">tutorials</span>: <span class="code-number">8000</span>,
+  <span class="code-property">cost</span>: <span class="code-number">0</span>
+};
+
+<span class="code-keyword">export default</span> freeCodeCamp;</code></pre>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-value" data-target="500000">0</div>
+                <div class="stat-label">GitHub Stars</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-value" data-target="5000">0</div>
+                <div class="stat-label">Contributors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="stat-value" data-target="200">0</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="stat-value" data-target="40000000">0</div>
+                <div class="stat-label">Learners</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Open Source Projects</h2>
+            <p class="section-description">
+                From our main learning platform to developer tools, every project is open source and community-driven.
+            </p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">
+                <i class="fas fa-th-large"></i>
+                All Projects
+            </button>
+            <button class="filter-btn" data-category="learning">
+                <i class="fas fa-graduation-cap"></i>
+                Learning
+            </button>
+            <button class="filter-btn" data-category="tools">
+                <i class="fas fa-wrench"></i>
+                Tools
+            </button>
+            <button class="filter-btn" data-category="community">
+                <i class="fas fa-users"></i>
+                Community
+            </button>
+            <button class="filter-btn" data-category="mobile">
+                <i class="fas fa-mobile-alt"></i>
+                Mobile
+            </button>
+            <button class="filter-btn" data-category="resources">
+                <i class="fas fa-book"></i>
+                Resources
+            </button>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid" id="projectsGrid">
+            <!-- Projects will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Contribute?</h2>
+            <p class="cta-description">
+                Join thousands of developers making a difference. Every contribution counts,
+                from fixing typos to building new features.
+            </p>
+            <div class="cta-actions">
+                <a href="https://contribute.freecodecamp.org" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    <i class="fas fa-code-branch"></i>
+                    Read Contribution Guide
+                </a>
+                <a href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source/" class="btn btn-ghost btn-large" target="_blank" rel="noopener">
+                    <i class="fas fa-book-open"></i>
+                    Learn About Open Source
+                </a>
+            </div>
+        </div>
+        <div class="cta-decoration">
+            <div class="floating-icon" style="--delay: 0s; --x: 10%; --y: 20%;">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 1s; --x: 85%; --y: 15%;">
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 2s; --x: 75%; --y: 70%;">
+                <i class="fab fa-node-js"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 0.5s; --x: 15%; --y: 75%;">
+                <i class="fab fa-python"></i>
+            </div>
+            <div class="floating-icon" style="--delay: 1.5s; --x: 50%; --y: 10%;">
+                <i class="fab fa-js-square"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="footer-logo">freeCodeCamp</span>
+                    <p class="footer-tagline">Learn to code for free.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Learn</h4>
+                        <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener">Curriculum</a>
+                        <a href="https://www.freecodecamp.org/news" target="_blank" rel="noopener">Tutorials</a>
+                        <a href="https://www.youtube.com/freecodecamp" target="_blank" rel="noopener">YouTube</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://forum.freecodecamp.org" target="_blank" rel="noopener">Forum</a>
+                        <a href="https://discord.gg/freecodecamp" target="_blank" rel="noopener">Discord</a>
+                        <a href="https://github.com/freeCodeCamp" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <a href="https://www.freecodecamp.org/news/about/" target="_blank" rel="noopener">Our Mission</a>
+                        <a href="https://www.freecodecamp.org/donate" target="_blank" rel="noopener">Donate</a>
+                        <a href="https://www.linkedin.com/school/freecodecamp" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 freeCodeCamp.org. Open source under BSD-3-Clause license.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/freeCodeCamp" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/freecodecamp" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/freecodecamp" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

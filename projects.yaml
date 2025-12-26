@@ -1,0 +1,182 @@
+# freeCodeCamp Open Source Projects Configuration
+# Add or modify projects by editing this file
+
+meta:
+  title: "Open Source at freeCodeCamp"
+  description: "Explore our community-driven open source projects. Together, we're building free education for everyone."
+  tagline: "Building Free Education for the World"
+
+categories:
+  - id: learning
+    name: Learning Platform
+    icon: graduation-cap
+  - id: tools
+    name: Developer Tools
+    icon: wrench
+  - id: mobile
+    name: Mobile Apps
+    icon: mobile
+  - id: community
+    name: Community
+    icon: users
+  - id: resources
+    name: Resources
+    icon: book
+
+projects:
+  - name: freeCodeCamp
+    description: "Our open-source codebase and curriculum. Learn math, programming, and computer science for free with 3,000+ hours of content."
+    repo: freeCodeCamp/freeCodeCamp
+    stars: 435000
+    language: TypeScript
+    category: learning
+    featured: true
+    size: large
+    tags:
+      - curriculum
+      - education
+      - javascript
+      - react
+      - nodejs
+
+  - name: DevDocs
+    description: "Fast, offline-first API documentation browser with 100+ docs including JavaScript, React, Vue, Angular, Node, and more."
+    repo: freeCodeCamp/devdocs
+    stars: 38200
+    language: Ruby
+    category: tools
+    featured: true
+    size: medium
+    tags:
+      - documentation
+      - api
+      - offline
+
+  - name: Mobile App
+    description: "Learn to code on the go! Our open-source mobile app brings freeCodeCamp's curriculum to iOS and Android devices."
+    repo: freeCodeCamp/mobile
+    stars: 508
+    language: Dart
+    category: mobile
+    featured: true
+    size: medium
+    tags:
+      - flutter
+      - ios
+      - android
+      - mobile
+
+  - name: How to Contribute to Open Source
+    description: "A comprehensive guide for first-time open source contributors. Learn the best practices and start your journey today."
+    repo: freeCodeCamp/how-to-contribute-to-open-source
+    stars: 9200
+    language: Ruby
+    category: community
+    featured: true
+    size: medium
+    tags:
+      - beginners
+      - guide
+      - contribution
+
+  - name: UI Component Library
+    description: "Our design system and reusable UI components built with TypeScript. Powers the freeCodeCamp learning platform."
+    repo: freeCodeCamp/ui
+    stars: 150
+    language: TypeScript
+    category: tools
+    size: small
+    tags:
+      - design-system
+      - components
+      - react
+
+  - name: News Publication
+    description: "Developer news and tutorials publication built with 11ty and Ghost. Home to 8,000+ coding tutorials."
+    repo: freeCodeCamp/news
+    stars: 400
+    language: JavaScript
+    category: resources
+    size: small
+    tags:
+      - blog
+      - tutorials
+      - 11ty
+
+  - name: Courses VSCode Extension
+    description: "Visual Studio Code extension for freeCodeCamp course development. Build and test curriculum locally."
+    repo: freeCodeCamp/courses-vscode-extension
+    stars: 50
+    language: TypeScript
+    category: tools
+    size: small
+    tags:
+      - vscode
+      - extension
+      - courses
+
+  - name: 100DaysOfCode Discord Bot
+    description: "Discord bot to help track your #100DaysOfCode challenge progress and connect with other learners."
+    repo: freeCodeCamp/100DaysOfCode-discord-bot
+    stars: 200
+    language: TypeScript
+    category: community
+    size: small
+    tags:
+      - discord
+      - bot
+      - 100daysofcode
+
+  - name: Contribute Guide
+    description: "Everything you need to know about contributing to freeCodeCamp. Setup guides, workflows, and best practices."
+    repo: freeCodeCamp/contribute
+    stars: 110
+    language: Markdown
+    category: community
+    size: small
+    tags:
+      - contributing
+      - guide
+      - setup
+
+  - name: Infrastructure
+    description: "Infrastructure-as-code for freeCodeCamp's cloud services. DevOps best practices and automation."
+    repo: freeCodeCamp/infra
+    stars: 80
+    language: HCL
+    category: tools
+    size: small
+    tags:
+      - devops
+      - terraform
+      - cloud
+
+  - name: i18n Curriculum
+    description: "Internationalization of freeCodeCamp's curriculum. Help translate our content into your language."
+    repo: freeCodeCamp/i18n-curriculum
+    stars: 100
+    language: Shell
+    category: learning
+    size: small
+    tags:
+      - translation
+      - i18n
+      - localization
+
+  - name: Exam Creator
+    description: "Tool for creating and managing certification exams. Powers freeCodeCamp's developer certifications."
+    repo: freeCodeCamp/exam-creator
+    stars: 30
+    language: TypeScript
+    category: tools
+    size: small
+    tags:
+      - exams
+      - certification
+      - testing
+
+stats:
+  total_stars: 500000
+  contributors: 5000
+  countries: 200
+  learners: 40000000
